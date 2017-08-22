@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-amqplib",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Sails hook for working with amqplib channels easily and keep workers in api/workers directory.",
   "repository": {
     "type": "git",

@@ -81,7 +81,8 @@ module.exports = function SailsHookAmqplibJobs(sails) {
             break;
           default : content = message;
         }
-        worker.process(content)
+        const handler = worker.handler || worker.process;
+        handler(content)
           .then(() => {
             channel.ack(message);
           })
